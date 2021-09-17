@@ -1,7 +1,3 @@
-from pprint import pprint
-
-import arrow
-
 from utils import cli_parser
 from utils.config import Config
 from trustar import TruStar
@@ -20,7 +16,7 @@ def init_ts_client(config):
 
 
 def init_ts_client2(config):
-    return TruStar2(api_key=config.api_key,api_secret=config.api_secret,client_metatag=config.client_metatag)
+    return TruStar2(api_key=config.api_key, api_secret=config.api_secret, client_metatag=config.client_metatag)
 
 
 def main():
@@ -33,5 +29,3 @@ def main():
     workflow_config = build_config(cli_args.config_file_path, 'workflows')
     ts2 = init_ts_client2(workflow_config)
     logger.info(f"Response TS 2.0: {ts2.account().ping().data}")
-
-

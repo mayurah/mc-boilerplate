@@ -14,4 +14,4 @@ RUN pipenv lock -r > requirements.txt
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD [ "python", "-m", "mc_boilerplate" ]
+CMD [ "python", "-m", "mc_boilerplate", "-c", "trustar_config.json" ]
