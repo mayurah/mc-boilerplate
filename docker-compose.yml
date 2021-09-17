@@ -1,13 +1,12 @@
 version: "3"
 services:
-  mc_cyjax:
+  mc_boilerplate:
     build: .
     environment:
-      - TS_USER_API_KEY
-      - TS_USER_API_SECRET
-      - INGEST_ENCLAVE
-      - CYJAX_TOKEN
-      - CYJAX_TIME_DELTA
+      - WORKFLOW_USER_API_KEY
+      - WORKFLOW_USER_API_SECRET
+      - LEGACY_USER_API_KEY
+      - LEGACY_USER_API_SECRET
     volumes:
       - ./logs:/usr/src/app/logs
 
