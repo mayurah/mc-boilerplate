@@ -1,0 +1,15 @@
+{
+  "workflows": {
+    "api_key": "WORKFLOW_USER_API_KEY",
+    "api_secret": "WORKFLOW_USER_API_SECRET",
+    "client_metatag": "Managed Connector - Boilerplate",
+    "enclave_ids": [
+    ]
+  },
+  "legacy": {
+    "api_key": "LEGACY_USER_API_KEY",
+    "api_secret": "LEGACY_USER_API_SECRET",
+    "client_metatag": "Managed Connector - Boilerplate",
+    "enclave_ids": []
+  }
+}

@@ -1,0 +1,2 @@
+# Managed Connector - Boilerplate
+___

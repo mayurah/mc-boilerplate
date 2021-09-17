@@ -1,0 +1,17 @@
+version: "3"
+services:
+  mc_cyjax:
+    build: .
+    environment:
+      - TS_USER_API_KEY
+      - TS_USER_API_SECRET
+      - INGEST_ENCLAVE
+      - CYJAX_TOKEN
+      - CYJAX_TIME_DELTA
+    volumes:
+      - ./logs:/usr/src/app/logs
+
+networks:
+  default:
+    external:
+      name: managed-connector
