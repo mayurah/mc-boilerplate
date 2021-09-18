@@ -26,11 +26,15 @@ For 1.3 API
 Ensure that Docker is installed
 Clone the repo
 
-Setup Envionment variables
+```bash
+  % git clone git@github.com:trustar/mc-boilerplate.git <new MC name>
+```
+
+Update boilerplate code for new Managed Connector
 
 ```bash
-  % cd path_to_repo/mc-boilerplate
-  % cp .env.example .env
+  % cd path_to_repo/<new MC name>
+  % ./setup.sh
 ```
 Edit the .env file with your API key and secret
 
